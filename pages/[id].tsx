@@ -5,6 +5,7 @@ import type {
   GetStaticPropsContext,
   InferGetStaticPropsType,
 } from "next";
+import Link from "next/link";
 import { Locations, ParkingData } from "../types";
 
 const BooleanTag = (props: {
@@ -22,7 +23,9 @@ const ParkingInfo = ({
   if (!parkingData) return <>No</>;
   return (
     <>
-      <h1 className="title has-text-centered">{parkingData.facility_name}</h1>
+      <Link href="">
+        <h1 className="title has-text-centered">{parkingData.facility_name}</h1>
+      </Link>
       <h2 className="subtitle">
         Here are the details from <b>{parkingData.facility_name}</b> last
         updated <b>{moment(parkingData.MessageDate).fromNow()}</b>.
