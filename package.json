@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bulma": "^0.9.3",
+    "fuse.js": "^6.6.1",
+    "moment": "^2.29.3",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
     "@types/node": "17.0.31",
