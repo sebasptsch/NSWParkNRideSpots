@@ -25,7 +25,7 @@ const Home = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [results, setResults] = useState<{ id: string; name: any }[]>();
   return (
     <div>
-      <h1 className="title has-text-centered">Park'n Ride Info</h1>
+      <h1 className="title has-text-centered">Park&apos;n Ride Info</h1>
       <h2 className="subtitle">
         See how many spots are left at different park and ride locations.
       </h2>

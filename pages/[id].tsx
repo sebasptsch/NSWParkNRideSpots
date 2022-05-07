@@ -29,7 +29,7 @@ const ParkingInfo = ({
       </h2>
 
       {parkingData.zones.map((zone) => (
-        <div className="box">
+        <div className="box" key={zone.zone_id}>
           <b>{zone.zone_name}</b>
           <p>{zone.spots} spots available.</p>
           <p>
